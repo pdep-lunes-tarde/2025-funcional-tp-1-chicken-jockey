@@ -37,7 +37,7 @@ superficieCuadrado :: Number -> Number
 superficieCuadrado lado = lado ^ 2
 
 superficieCubo :: Number -> Number
-superficieCubo lado = implementame
+superficieCubo lado = superficieCuadrado lado * 6
 
 superficieCilindro :: Number -> Number -> Number
 superficieCilindro radio altura = implementame
