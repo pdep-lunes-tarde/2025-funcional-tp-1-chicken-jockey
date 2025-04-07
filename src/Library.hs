@@ -31,7 +31,7 @@ perimetroCirculo :: Number -> Number
 perimetroCirculo radio = 2 * pi * radio
 
 perimetroCuadrado :: Number -> Number
-perimetroCuadrado lado = implementame
+perimetroCuadrado lado = lado * 4
 
 superficieCuadrado :: Number -> Number
 superficieCuadrado lado = implementame
