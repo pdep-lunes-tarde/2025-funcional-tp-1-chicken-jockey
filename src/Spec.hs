@@ -7,7 +7,7 @@ correrTests :: IO ()
 correrTests = hspec $ do
 -- Si alguna suit de tests tiene "focus" adelante, solo se va a correr esa.
 -- Asi que, para ir probando los puntos, agreguen focus a los demas, o saquenselo a todos:
-  focus suiteDeTestsDeParteI
+  suiteDeTestsDeParteI
   suiteDeTestsDeParteIBonus
   suiteDeTestsDeParteII
   
@@ -52,19 +52,19 @@ suiteDeTestsDeParteII =
   describe "Parte 2: Temperaturas" $ do
     describe "celsiusAFahrenheit" $ do
       it "pasa una temperatura de celsius a fahrenheit" $ do
-        pendingWith "Reemplacen los implementame con valores de prueba que ustedes elijan. Luego borren esta linea"
-        celsiusAFahrenheit implementame `shouldBeEqualUpTo2Decimals` implementame
+        celsiusAFahrenheit 0 `shouldBeEqualUpTo2Decimals` 32
+        celsiusAFahrenheit 10 `shouldBeEqualUpTo2Decimals` 50
 
     describe "fahrenheitACelsius" $ do
       it "pasa una temperatura de fahrenheit a celsius" $ do
-        pendingWith "reemplacen los 'implementame' por valores de prueba que ustedes elijan, luego borren esta linea"
-        fahrenheitACelsius implementame `shouldBeEqualUpTo2Decimals` implementame
+        fahrenheitACelsius 32 `shouldBeEqualUpTo2Decimals` 0
+        fahrenheitACelsius 50 `shouldBeEqualUpTo2Decimals` 10
 
     describe "fahrenheitACelsius y celsiusAFahrenheit son inversas" $ do
       it "convertir un valor en celsius a fahrenheit y luego volver a convertir a celsius retorna el valor original" $ do
-        pendingWith "Escriban el cuerpo de un test en el que se chequee que si convierto un numero a fahrenheit y luego convierto el resultado a celsius obtengo el valor original"
+        fahrenheitACelsius (celsiusAFahrenheit 0) `shouldBeEqualUpTo2Decimals` 0
       it "convertir un valor en fahrenheit a celsius y luego volver a convertir a fahrenheit retorna el valor original" $ do
-        pendingWith "Lo mismo que el test anterior pero al reves"
+        celsiusAFahrenheit (fahrenheitACelsius 32) `shouldBeEqualUpTo2Decimals` 32
       
 
     describe "haceFrioCelsius" $ do

@@ -15,10 +15,10 @@ inversa n = 1 / n
 -- 2. Temperaturas
 
 celsiusAFahrenheit :: Number -> Number
-celsiusAFahrenheit celsius = implementame
+celsiusAFahrenheit celsius = celsius * 1.8 + 32
 
 fahrenheitACelsius :: Number -> Number
-fahrenheitACelsius fahrenheit = implementame
+fahrenheitACelsius fahrenheit = (fahrenheit - 32) / 1.8
 
 -- escriban el tipo de esta función
 haceFrioCelsius grados = implementame
