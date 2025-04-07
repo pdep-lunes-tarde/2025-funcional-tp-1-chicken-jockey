@@ -9,8 +9,8 @@ siguiente numero = numero + 1
 esPositivo :: Number -> Bool
 esPositivo numero = numero > 0
 
--- escriban el tipo de esta función
-inversa n = implementame
+inversa :: Number -> Number
+inversa n = 1 / n
 
 -- 2. Temperaturas
 
