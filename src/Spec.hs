@@ -68,15 +68,12 @@ suiteDeTestsDeParteII =
       
 
     describe "haceFrioCelsius" $ do
-      -- Pista: hay 3 casos a testear
       it "Es verdad cuando hacen menos de 8 grados celsius" $ do
-        pendingWith "Escribir el cuerpo de este test"
-        
-      it "" $ do
-        pendingWith "Escribir un nombre para este test"
+        haceFrioCelsius 5 `shouldBe` True
+      it "Es verdad cuando hace 8 grados celsius" $ do
         haceFrioCelsius 8 `shouldBe` True
-      it "" $ do
-        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
+      it "Es falso cuando hacen mas de 8 grados celsius" $ do
+        haceFrioCelsius 17 `shouldBe` False
 
     describe "haceFrioFahrenheit" $ do
       -- Pista: hay 3 casos a testear

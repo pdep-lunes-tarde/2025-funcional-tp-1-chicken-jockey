@@ -20,8 +20,8 @@ celsiusAFahrenheit celsius = celsius * 1.8 + 32
 fahrenheitACelsius :: Number -> Number
 fahrenheitACelsius fahrenheit = (fahrenheit - 32) / 1.8
 
--- escriban el tipo de esta función
-haceFrioCelsius grados = implementame
+haceFrioCelsius :: Number -> Bool
+haceFrioCelsius grados = grados <= 8
 
 -- escriban el tipo de esta función
 haceFrioFahrenheit grados = implementame
