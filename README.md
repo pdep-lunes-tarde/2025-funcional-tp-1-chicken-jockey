@@ -2,14 +2,14 @@
 
 ## Grupo, nombre y legajo de integrantes
 
-- Nombre del grupo: **Completar**
+- Nombre del grupo: chicken-jockey
 
 Integrantes:
-- Legajo: **Completar** 
-- Nombre: **Completar**
+- Legajo: 1633867
+- Nombre: Emanuel Prima
 
-- Legajo: **Completar** 
-- Nombre: **Completar**
+- Legajo: 2208623
+- Nombre: Thiago Piccoli
 
 
 ## Objetivos
