@@ -40,4 +40,4 @@ superficieCubo :: Number -> Number
 superficieCubo lado = superficieCuadrado lado * 6
 
 superficieCilindro :: Number -> Number -> Number
-superficieCilindro radio altura = implementame
+superficieCilindro radio altura = altura * perimetroCirculo radio
