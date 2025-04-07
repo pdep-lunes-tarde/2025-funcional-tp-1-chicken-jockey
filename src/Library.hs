@@ -28,7 +28,7 @@ haceFrioFahrenheit grados = haceFrioCelsius (fahrenheitACelsius grados)
 
 -- 2.5 Bonus OPCIONAL
 perimetroCirculo :: Number -> Number
-perimetroCirculo radio = implementame
+perimetroCirculo radio = 2 * pi * radio
 
 perimetroCuadrado :: Number -> Number
 perimetroCuadrado lado = implementame
