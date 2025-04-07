@@ -34,7 +34,7 @@ perimetroCuadrado :: Number -> Number
 perimetroCuadrado lado = lado * 4
 
 superficieCuadrado :: Number -> Number
-superficieCuadrado lado = implementame
+superficieCuadrado lado = lado ^ 2
 
 superficieCubo :: Number -> Number
 superficieCubo lado = implementame
